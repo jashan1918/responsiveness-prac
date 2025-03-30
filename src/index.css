@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Rubik;
+    src: url(./assets/fonts/Rubik-Regular.ttf);
+}
+
+@import "tailwindcss";
+
+@theme{
+
+    --color-background: #ffffff;
+    --font-rubik: Rubik;
+    --color-grayish-blue: hsl(240, 30%, 50%);
+}
