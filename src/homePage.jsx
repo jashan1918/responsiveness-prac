@@ -44,7 +44,7 @@ function HomePage() {
         <Features />
         <Download />
 
-        <div className="flex gap-5 justify-center mt-30">
+        <div className="flex gap-5 justify-center flex-wrap mt-30">
         <Card title = {"Add to Chrome"}  description = {"Minimum Version 62"} img = {"/logo-chrome.svg"} />
         <Card title = {"Add to Firefox"} description = {"Minimum Version 55"} img = {"/logo-firefox.svg"} className={"mt-10"} />
         <Card title = {"Add to Opera"}   description = {"Minimum Version 46"} img = {"/logo-opera.svg"}   className={"mt-20"}/>
