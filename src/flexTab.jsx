@@ -4,7 +4,7 @@ function FlexTab({ sections }) {
   const [openId, setOpenId] = useState(null); // Track open section ID
 
   return (
-    <div className="flex flex-col  w-[40%] justify-between mt-10 mx-auto p-4">
+    <div className="flex flex-col w-full  md:w-[40%] justify-between mt-10 mx-auto p-4">
       {sections.map((section) => (
         <div 
           key={section.id} 
