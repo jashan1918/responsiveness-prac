@@ -1,3 +1,5 @@
+import scrollToSection from "./scrolltosection";
+
 function Hero() {
   return (
     <>
@@ -13,8 +15,8 @@ function Hero() {
             free.
           </p>
           <div className="flex gap-4 font-semibold">
-            <button className="bg-[#5368df] tracking-wider cursor-pointer rounded-md border-2 border-[#5368df] text-white px-5 py-5 hover:bg-white hover:text-[#5368df]">Get it On Chrome</button>
-            <button className="bg-[#d1d5db] tracking-wider cursor-pointer rounded-md border-2 border-[#d1d5db] text-black px-5 py-5 hover:bg-white hover:text-gray-700">Get it On Firefox</button>
+            <button onClick={() => scrollToSection('info')} className="bg-[#5368df] tracking-wider cursor-pointer rounded-md border-2 border-[#5368df] text-white px-5 py-5 hover:bg-white hover:text-[#5368df]">Get it On Chrome</button>
+            <button onClick={() => scrollToSection('info')}className="bg-[#d1d5db] tracking-wider cursor-pointer rounded-md border-2 border-[#d1d5db] text-black px-5 py-5 hover:bg-white hover:text-gray-700">Get it On Firefox</button>
           </div>
         </div>
 

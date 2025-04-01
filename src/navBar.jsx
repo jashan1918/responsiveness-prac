@@ -1,11 +1,12 @@
 import { useState } from "react";
+import scrollToSection from "./scrolltosection";
 
 function NavBar() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <nav className="container relative mx-auto p-6">
+      <nav id="info" className="container relative mx-auto p-6">
         {/* container for nav items */}
         <div className="flex items-center justify-between space-x-40 my-6">
           {/* the logo */}
@@ -55,13 +56,13 @@ function NavBar() {
 }
 {isMenuOpen && (
   <div className="fixed inset-0 z-[9999] w-screen bg-blue-300/50 backdrop-blur-md flex flex-col items-center space-y-6 py-8 md:hidden">
-    <a href="#features" className="text-white text-lg font-semibold tracking-wide hover:text-red-400 drop-shadow-lg">
+    <a onClick={() => scrollToSection('features')} href="#features" className="text-white text-lg font-semibold tracking-wide hover:text-red-400 drop-shadow-lg">
       Features
     </a>
-    <a href="#download" className="text-white text-lg font-semibold tracking-wide hover:text-red-400 drop-shadow-lg">
+    <a onClick={() => scrollToSection('download')} href="#download" className="text-white text-lg font-semibold tracking-wide hover:text-red-400 drop-shadow-lg">
       Download
     </a>
-    <a href="#faq" className="text-white text-lg font-semibold tracking-wide hover:text-red-400 drop-shadow-lg">
+    <a onClick={() => scrollToSection('faq')} href="#faq" className="text-white text-lg font-semibold tracking-wide hover:text-red-400 drop-shadow-lg">
       FAQ
     </a>
     <a className="border-white border-2 py-3 px-6 cursor-pointer text-white font-semibold bg-[#fa5757] rounded-lg hover:bg-white hover:text-[#fa5757] transition-all duration-300">

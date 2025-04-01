@@ -1,3 +1,5 @@
+import scrollToSection from "./scrolltosection"
+
 function InputArea() {
 
 
@@ -11,7 +13,7 @@ function InputArea() {
 
             <div className="mt-10 pb-20">
                 <input type="text" placeholder="Enter your email here" className="px-5 py-2 bg-white text-gray-600 rounded-md mr-5 border-none outline-none" />
-                <button className="text-white bg-[#fa5757] px-4 py-2 rounded-md">contact us</button>
+                <button onClick={() => scrollToSection('info')} className="text-white cursor-pointer bg-[#fa5757] px-4 py-2 rounded-md">contact us</button>
             </div>
             </div>
         </div>

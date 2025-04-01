@@ -1,7 +1,7 @@
 function Download() {
   return (
     <>
-      <section>
+      <section id="download">
         <div className="mt-35 text-center">
         <h2 className="text-4xl font-bold">Download the extension</h2>
         <p className="text-gray-500 max-w-[30rem] mt-5 mx-auto">

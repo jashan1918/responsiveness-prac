@@ -1,9 +1,11 @@
+import scrollToSection from "./scrolltosection"
+
 function Card(props) {
 
 
     return(
         <>
-              <div className= {`w-[20rem] h-80 p-6 shadow-lg ${props.className} rounded-lg`}>
+              <div onClick={() => scrollToSection('info')} className= {`w-[20rem] h-80 p-6 shadow-lg ${props.className} rounded-lg`}>
   <img src={props.img} className="w-20 mx-auto" />
   <h3 className="text-xl font-bold mt-6 text-center">{props.title}</h3>
   <p className="text-gray-500 mt-4 text-center">{props.description}</p>

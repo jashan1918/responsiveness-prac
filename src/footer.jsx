@@ -1,3 +1,5 @@
+import scrollToSection from "./scrolltosection"
+
 function Footer() {
 
 
@@ -8,18 +10,18 @@ function Footer() {
         <div className="flex flex-col md:flex-row text-center bg-[#252b46] text-gray-400 text-xl gap-10 justify-around items-center pt-20 pb-20">
             <div className="flex flex-col md:flex-row gap-10">
         <img src="/logo-bookmark-footer.svg"></img>
-        <a href="#features" className="hover:text-red-400">
+        <a onClick={() => scrollToSection('features')} href="#features" className="hover:text-red-400">
               Features
             </a>
-            <a href="#download" className="hover:text-red-400">
-              Download
+            <a onClick={() => scrollToSection('download')} href="#download" className="hover:text-red-400">
+              Download 
             </a>
-            <a href="#faq" className="hover:text-red-400">
+            <a onClick={() => scrollToSection('faq')} href="#faq" className="hover:text-red-400">
               FAQ
             </a>
             </div>
         <div className="flex gap-10">
-        <svg
+        <svg onClick={() => scrollToSection('info')}
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 24 24"
   fill="currentColor"
@@ -31,7 +33,7 @@ function Footer() {
 </svg>
 
 
-        <svg 
+        <svg onClick={() => scrollToSection('info')}
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 24 24"
   fill="currentColor"

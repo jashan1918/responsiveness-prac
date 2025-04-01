@@ -1,4 +1,5 @@
 import { useState } from "react";
+import scrollToSection from "./scrolltosection";
 
 function Features() {
   const featureData = {
@@ -29,7 +30,7 @@ function Features() {
   };
   return (
     <>
-      <section>
+      <section id="features">
         <div className="mt-25 text-center">
           <h2 className="text-4xl font-extrabold">Features</h2>
           <p className="text-gray-500 mt-7 max-w-[29rem] mx-auto">
@@ -77,7 +78,7 @@ function Features() {
           <p className="text-base mt-10 text-gray-400 max-w-120">
           {featureData[activeFeature].description}
           </p>
-          <button className=" w-fit py-2 px-4 mt-5 cursor-pointer rounded-md border-2 border-[#5368df] bg-[#5368df] text-white font-semibold hover:bg-white hover:text-[#5368df]">
+          <button onClick={() =>scrollToSection('info')} className=" w-fit py-2 px-4 mt-5 cursor-pointer rounded-md border-2 border-[#5368df] bg-[#5368df] text-white font-semibold hover:bg-white hover:text-[#5368df]">
             More Info
           </button>
         </div>
