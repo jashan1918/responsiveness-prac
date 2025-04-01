@@ -2,7 +2,7 @@ function Hero() {
   return (
     <>
       {/* hero section */}
-      <div className="flex mt-10 mx-auto container">
+      <div className=" flex-col-reverse justify-center flex lg:flex-row mt-10 mx-auto container md:gap-20 ">
         <div className="flex flex-col mx-auto space-y-10 items-center lg:items-start lg:mt-16 lg:w-1/2 ">
           <h1 className="text-3xl font-extrabold max-w-[600px] text-center  lg:text-6xl lg:text-left">
             A Simple Bookmark Manager
@@ -18,9 +18,9 @@ function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto">
-            <div className="absolute h-[65%] w-[100%] bg-[#5368df] bottom-[-10%] right-[-25%] rounded-bl-[6vw]"></div>
-            <img src="/illustration-hero.svg" className="relative z-10 right-20"></img>
+        <div className="relative mx-auto lg-mt-20">
+            <div className="hidden lg:block  absolute h-[65%] w-[100%] bg-[#5368df] bottom-[-10%] right-[-25%] rounded-bl-[6vw]"></div>
+            <img src="/illustration-hero.svg" className="relative z-10 w-100 md:w-165 md:pt-30 xl:pt-0 md:right-10 md:bottom-0 lg:right:20"></img>
         </div>
       </div>
     </>
