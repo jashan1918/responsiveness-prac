@@ -5,8 +5,8 @@ function Footer() {
 
 
     return(
-        <div className="flex bg-[#252b46] text-gray-400 text-xl gap-10 justify-around items-center pt-20 pb-20">
-            <div className="flex gap-10">
+        <div className="flex flex-col md:flex-row text-center bg-[#252b46] text-gray-400 text-xl gap-10 justify-around items-center pt-20 pb-20">
+            <div className="flex flex-col md:flex-row gap-10">
         <img src="/logo-bookmark-footer.svg"></img>
         <a href="#features" className="hover:text-red-400">
               Features
