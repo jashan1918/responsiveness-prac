@@ -41,7 +41,7 @@ function Features() {
       </section>
 
       {/* Features */}
-      <div className="h-20 flex gap-15 justify-center font-thin text-lg text-gray-600 mt-10">
+      <div className="flex-col md:flex-row flex gap-15 justify-center font-thin text-lg text-gray-600 mt-10">
         <button
           onClick={() => handleFeatureClick("feature1")}
           className="cursor-pointer hover:text-red-400"
@@ -64,15 +64,15 @@ function Features() {
       <div className="h-[1px] max-w-150 mx-auto bg-gray-400"></div>
 
       {/* features Material */}
-      <div className="flex mx-auto container gap-10 mt-7 justify-center">
+      <div className="flex-col md:flex-row flex mx-auto container gap-10 mt-7 md:justify-center items-center">
         <div className="relative">
-          <div className="absolute h-[85%] w-[180%] bg-[#5368df] bottom-[-25%] left-[-100%] rounded-r-full"></div>
+          <div className="absolute h-[85%] w-[180%] hidden md:block bg-[#5368df] bottom-[-25%] left-[-100%] rounded-r-full"></div>
           <img
             src={featureData[activeFeature].img}
             className="max-w-[100%] relative z-10"
           ></img>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center lg:mb-35 md:items-start text-center md:text-start">
           <h3 className="text-3xl font-extrabold">{featureData[activeFeature].title}</h3>
           <p className="text-base mt-10 text-gray-400 max-w-120">
           {featureData[activeFeature].description}
